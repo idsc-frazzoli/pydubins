@@ -3872,9 +3872,9 @@ static void __pyx_tp_dealloc_6dubins__DubinsPath(PyObject *o) {
   {
     PyObject *etype, *eval, *etb;
     PyErr_Fetch(&etype, &eval, &etb);
-    Py_SET_REFCNT(o, Py_REFCNT(0) + 1);
+    Py_SET_REFCNT(o, Py_REFCNT(o) + 1);
     __pyx_pw_6dubins_11_DubinsPath_3__dealloc__(o);
-    Py_SET_REFCNT(o, Py_REFCNT(0) - 1);
+    Py_SET_REFCNT(o, Py_REFCNT(o) - 1);
     PyErr_Restore(etype, eval, etb);
   }
   (*Py_TYPE(o)->tp_free)(o);
@@ -3952,6 +3952,7 @@ static PyTypeObject __pyx_type_6dubins__DubinsPath = {
   #if PY_VERSION_HEX >= 0x030400a1
   0, /*tp_finalize*/
   #endif
+  0, /*tp_vectorcall*/
 };
 
 static struct __pyx_obj_6dubins___pyx_scope_struct__sample_many *__pyx_freelist_6dubins___pyx_scope_struct__sample_many[8];
@@ -4063,6 +4064,7 @@ static PyTypeObject __pyx_type_6dubins___pyx_scope_struct__sample_many = {
   #if PY_VERSION_HEX >= 0x030400a1
   0, /*tp_finalize*/
   #endif
+  0, /*tp_vectorcall*/
 };
 
 static PyMethodDef __pyx_methods[] = {
