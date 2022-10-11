@@ -735,11 +735,11 @@ struct __pyx_obj_6dubins__DubinsPath;
 struct __pyx_obj_6dubins___pyx_scope_struct__sample_many;
 
 /* "dubins.pyx":40
- * 
+ *
  * # Extension point for pure python classes
  * cdef class _DubinsPath:             # <<<<<<<<<<<<<<
  *     cdef core.DubinsPath *ppth
- * 
+ *
  */
 struct __pyx_obj_6dubins__DubinsPath {
   PyObject_HEAD
@@ -749,7 +749,7 @@ struct __pyx_obj_6dubins__DubinsPath {
 
 /* "dubins.pyx":114
  *         return (_q0[0], _q0[1], _q0[2])
- * 
+ *
  *     def sample_many(self, step_size):             # <<<<<<<<<<<<<<
  *         '''Sample the entire path
  *         '''
@@ -1259,8 +1259,8 @@ static PyObject *__pyx_codeobj__20;
 static PyObject *__pyx_codeobj__22;
 
 /* "dubins.pyx":25
- * 
- * 
+ *
+ *
  * cdef inline int callback(double q[3], double t, void* f):             # <<<<<<<<<<<<<<
  *     '''Internal c-callback to convert values back to python
  *     '''
@@ -1283,7 +1283,7 @@ static CYTHON_INLINE int __pyx_f_6dubins_callback(double *__pyx_v_q, double __py
  *     '''
  *     qn = (q[0], q[1], q[2])             # <<<<<<<<<<<<<<
  *     return (<object>f)(qn, t)
- * 
+ *
  */
   __pyx_t_1 = PyFloat_FromDouble((__pyx_v_q[0])); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -1309,7 +1309,7 @@ static CYTHON_INLINE int __pyx_f_6dubins_callback(double *__pyx_v_q, double __py
  *     '''
  *     qn = (q[0], q[1], q[2])
  *     return (<object>f)(qn, t)             # <<<<<<<<<<<<<<
- * 
+ *
  * LSL = 0
  */
   __pyx_t_3 = PyFloat_FromDouble(__pyx_v_t); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 29, __pyx_L1_error)
@@ -1368,8 +1368,8 @@ static CYTHON_INLINE int __pyx_f_6dubins_callback(double *__pyx_v_q, double __py
   goto __pyx_L0;
 
   /* "dubins.pyx":25
- * 
- * 
+ *
+ *
  * cdef inline int callback(double q[3], double t, void* f):             # <<<<<<<<<<<<<<
  *     '''Internal c-callback to convert values back to python
  *     '''
@@ -1392,10 +1392,10 @@ static CYTHON_INLINE int __pyx_f_6dubins_callback(double *__pyx_v_q, double __py
 
 /* "dubins.pyx":43
  *     cdef core.DubinsPath *ppth
- * 
+ *
  *     def __cinit__(self):             # <<<<<<<<<<<<<<
  *         self.ppth = <core.DubinsPath*>malloc(sizeof(core.DubinsPath))
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1420,20 +1420,20 @@ static int __pyx_pf_6dubins_11_DubinsPath___cinit__(struct __pyx_obj_6dubins__Du
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
   /* "dubins.pyx":44
- * 
+ *
  *     def __cinit__(self):
  *         self.ppth = <core.DubinsPath*>malloc(sizeof(core.DubinsPath))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __dealloc__(self):
  */
   __pyx_v_self->ppth = ((DubinsPath *)malloc((sizeof(DubinsPath))));
 
   /* "dubins.pyx":43
  *     cdef core.DubinsPath *ppth
- * 
+ *
  *     def __cinit__(self):             # <<<<<<<<<<<<<<
  *         self.ppth = <core.DubinsPath*>malloc(sizeof(core.DubinsPath))
- * 
+ *
  */
 
   /* function exit code */
@@ -1444,10 +1444,10 @@ static int __pyx_pf_6dubins_11_DubinsPath___cinit__(struct __pyx_obj_6dubins__Du
 
 /* "dubins.pyx":46
  *         self.ppth = <core.DubinsPath*>malloc(sizeof(core.DubinsPath))
- * 
+ *
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
  *         free(self.ppth)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1466,20 +1466,20 @@ static void __pyx_pf_6dubins_11_DubinsPath_2__dealloc__(struct __pyx_obj_6dubins
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
   /* "dubins.pyx":47
- * 
+ *
  *     def __dealloc__(self):
  *         free(self.ppth)             # <<<<<<<<<<<<<<
- * 
+ *
  *     @staticmethod
  */
   free(__pyx_v_self->ppth);
 
   /* "dubins.pyx":46
  *         self.ppth = <core.DubinsPath*>malloc(sizeof(core.DubinsPath))
- * 
+ *
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
  *         free(self.ppth)
- * 
+ *
  */
 
   /* function exit code */
@@ -1487,7 +1487,7 @@ static void __pyx_pf_6dubins_11_DubinsPath_2__dealloc__(struct __pyx_obj_6dubins
 }
 
 /* "dubins.pyx":50
- * 
+ *
  *     @staticmethod
  *     def shortest_path(q0, q1, rho):             # <<<<<<<<<<<<<<
  *         cdef double _q0[3]
@@ -1618,7 +1618,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_4shortest_path(PyObject *__pyx_v
  *         for i in [0, 1, 2]:
  *             _q0[i] = q0[i]             # <<<<<<<<<<<<<<
  *             _q1[i] = q1[i]
- * 
+ *
  */
     __pyx_t_4 = PyObject_GetItem(__pyx_v_q0, __pyx_v_i); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 55, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -1631,7 +1631,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_4shortest_path(PyObject *__pyx_v
  *         for i in [0, 1, 2]:
  *             _q0[i] = q0[i]
  *             _q1[i] = q1[i]             # <<<<<<<<<<<<<<
- * 
+ *
  *         path = _DubinsPath()
  */
     __pyx_t_4 = PyObject_GetItem(__pyx_v_q1, __pyx_v_i); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 56, __pyx_L1_error)
@@ -1653,7 +1653,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_4shortest_path(PyObject *__pyx_v
 
   /* "dubins.pyx":58
  *             _q1[i] = q1[i]
- * 
+ *
  *         path = _DubinsPath()             # <<<<<<<<<<<<<<
  *         code = core.dubins_shortest_path(path.ppth, _q0, _q1, _rho)
  *         if code != 0:
@@ -1664,7 +1664,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_4shortest_path(PyObject *__pyx_v
   __pyx_t_2 = 0;
 
   /* "dubins.pyx":59
- * 
+ *
  *         path = _DubinsPath()
  *         code = core.dubins_shortest_path(path.ppth, _q0, _q1, _rho)             # <<<<<<<<<<<<<<
  *         if code != 0:
@@ -1687,7 +1687,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_4shortest_path(PyObject *__pyx_v
  *         if code != 0:
  *             raise RuntimeError('path did not initialise correctly')             # <<<<<<<<<<<<<<
  *         return path
- * 
+ *
  */
     __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_RuntimeError, __pyx_tuple__2, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 61, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -1708,7 +1708,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_4shortest_path(PyObject *__pyx_v
  *         if code != 0:
  *             raise RuntimeError('path did not initialise correctly')
  *         return path             # <<<<<<<<<<<<<<
- * 
+ *
  *     @staticmethod
  */
   __Pyx_XDECREF(__pyx_r);
@@ -1717,7 +1717,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_4shortest_path(PyObject *__pyx_v
   goto __pyx_L0;
 
   /* "dubins.pyx":50
- * 
+ *
  *     @staticmethod
  *     def shortest_path(q0, q1, rho):             # <<<<<<<<<<<<<<
  *         cdef double _q0[3]
@@ -1739,7 +1739,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_4shortest_path(PyObject *__pyx_v
 }
 
 /* "dubins.pyx":65
- * 
+ *
  *     @staticmethod
  *     def path(q0, q1, rho, word):             # <<<<<<<<<<<<<<
  *         cdef double _q0[3]
@@ -1952,7 +1952,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_6path(PyObject *__pyx_v_q0, PyOb
  *         if code != 0:
  *             return None             # <<<<<<<<<<<<<<
  *         return path
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_INCREF(Py_None);
@@ -1972,7 +1972,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_6path(PyObject *__pyx_v_q0, PyOb
  *         if code != 0:
  *             return None
  *         return path             # <<<<<<<<<<<<<<
- * 
+ *
  *     def path_endpoint(self):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -1981,7 +1981,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_6path(PyObject *__pyx_v_q0, PyOb
   goto __pyx_L0;
 
   /* "dubins.pyx":65
- * 
+ *
  *     @staticmethod
  *     def path(q0, q1, rho, word):             # <<<<<<<<<<<<<<
  *         cdef double _q0[3]
@@ -2004,7 +2004,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_6path(PyObject *__pyx_v_q0, PyOb
 
 /* "dubins.pyx":78
  *         return path
- * 
+ *
  *     def path_endpoint(self):             # <<<<<<<<<<<<<<
  *         cdef double _q0[3]
  *         code = core.dubins_path_endpoint(self.ppth, _q0)
@@ -2059,7 +2059,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_8path_endpoint(struct __pyx_obj_
  *         if code != 0:
  *             raise RuntimeError('endpoint not found')             # <<<<<<<<<<<<<<
  *         return (_q0[0], _q0[1], _q0[2])
- * 
+ *
  */
     __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_RuntimeError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 82, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -2080,7 +2080,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_8path_endpoint(struct __pyx_obj_
  *         if code != 0:
  *             raise RuntimeError('endpoint not found')
  *         return (_q0[0], _q0[1], _q0[2])             # <<<<<<<<<<<<<<
- * 
+ *
  *     def path_length(self):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2107,7 +2107,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_8path_endpoint(struct __pyx_obj_
 
   /* "dubins.pyx":78
  *         return path
- * 
+ *
  *     def path_endpoint(self):             # <<<<<<<<<<<<<<
  *         cdef double _q0[3]
  *         code = core.dubins_path_endpoint(self.ppth, _q0)
@@ -2129,7 +2129,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_8path_endpoint(struct __pyx_obj_
 
 /* "dubins.pyx":85
  *         return (_q0[0], _q0[1], _q0[2])
- * 
+ *
  *     def path_length(self):             # <<<<<<<<<<<<<<
  *         '''Identify the total length of the path
  *         '''
@@ -2159,7 +2159,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_10path_length(struct __pyx_obj_6
  *         '''Identify the total length of the path
  *         '''
  *         return core.dubins_path_length(self.ppth)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def segment_length(self, i):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2171,7 +2171,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_10path_length(struct __pyx_obj_6
 
   /* "dubins.pyx":85
  *         return (_q0[0], _q0[1], _q0[2])
- * 
+ *
  *     def path_length(self):             # <<<<<<<<<<<<<<
  *         '''Identify the total length of the path
  *         '''
@@ -2190,7 +2190,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_10path_length(struct __pyx_obj_6
 
 /* "dubins.pyx":90
  *         return core.dubins_path_length(self.ppth)
- * 
+ *
  *     def segment_length(self, i):             # <<<<<<<<<<<<<<
  *         '''Identify the length of the i-th segment within the path
  *         '''
@@ -2221,7 +2221,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_12segment_length(struct __pyx_ob
  *         '''Identify the length of the i-th segment within the path
  *         '''
  *         return core.dubins_segment_length(self.ppth, i)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def segment_length_normalized(self, i):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2234,7 +2234,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_12segment_length(struct __pyx_ob
 
   /* "dubins.pyx":90
  *         return core.dubins_path_length(self.ppth)
- * 
+ *
  *     def segment_length(self, i):             # <<<<<<<<<<<<<<
  *         '''Identify the length of the i-th segment within the path
  *         '''
@@ -2253,7 +2253,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_12segment_length(struct __pyx_ob
 
 /* "dubins.pyx":95
  *         return core.dubins_segment_length(self.ppth, i)
- * 
+ *
  *     def segment_length_normalized(self, i):             # <<<<<<<<<<<<<<
  *         '''Identify the normalized length of the i-th segment within the path
  *         '''
@@ -2284,7 +2284,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_14segment_length_normalized(stru
  *         '''Identify the normalized length of the i-th segment within the path
  *         '''
  *         return core.dubins_segment_length_normalized(self.ppth, i)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def path_type(self):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2297,7 +2297,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_14segment_length_normalized(stru
 
   /* "dubins.pyx":95
  *         return core.dubins_segment_length(self.ppth, i)
- * 
+ *
  *     def segment_length_normalized(self, i):             # <<<<<<<<<<<<<<
  *         '''Identify the normalized length of the i-th segment within the path
  *         '''
@@ -2316,7 +2316,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_14segment_length_normalized(stru
 
 /* "dubins.pyx":100
  *         return core.dubins_segment_length_normalized(self.ppth, i)
- * 
+ *
  *     def path_type(self):             # <<<<<<<<<<<<<<
  *         '''Identify the type of path which applies
  *         '''
@@ -2346,7 +2346,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_16path_type(struct __pyx_obj_6du
  *         '''Identify the type of path which applies
  *         '''
  *         return core.dubins_path_type(self.ppth)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def sample(self, t):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2358,7 +2358,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_16path_type(struct __pyx_obj_6du
 
   /* "dubins.pyx":100
  *         return core.dubins_segment_length_normalized(self.ppth, i)
- * 
+ *
  *     def path_type(self):             # <<<<<<<<<<<<<<
  *         '''Identify the type of path which applies
  *         '''
@@ -2377,7 +2377,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_16path_type(struct __pyx_obj_6du
 
 /* "dubins.pyx":105
  *         return core.dubins_path_type(self.ppth)
- * 
+ *
  *     def sample(self, t):             # <<<<<<<<<<<<<<
  *         '''Sample the path
  *         '''
@@ -2435,7 +2435,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_18sample(struct __pyx_obj_6dubin
  *         if code != 0:
  *             raise RuntimeError('sample not found')             # <<<<<<<<<<<<<<
  *         return (_q0[0], _q0[1], _q0[2])
- * 
+ *
  */
     __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_RuntimeError, __pyx_tuple__5, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 111, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -2456,7 +2456,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_18sample(struct __pyx_obj_6dubin
  *         if code != 0:
  *             raise RuntimeError('sample not found')
  *         return (_q0[0], _q0[1], _q0[2])             # <<<<<<<<<<<<<<
- * 
+ *
  *     def sample_many(self, step_size):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2483,7 +2483,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_18sample(struct __pyx_obj_6dubin
 
   /* "dubins.pyx":105
  *         return core.dubins_path_type(self.ppth)
- * 
+ *
  *     def sample(self, t):             # <<<<<<<<<<<<<<
  *         '''Sample the path
  *         '''
@@ -2505,7 +2505,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_18sample(struct __pyx_obj_6dubin
 
 /* "dubins.pyx":114
  *         return (_q0[0], _q0[1], _q0[2])
- * 
+ *
  *     def sample_many(self, step_size):             # <<<<<<<<<<<<<<
  *         '''Sample the entire path
  *         '''
@@ -2665,7 +2665,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_11sample_many_f(PyObject *__pyx_
 
 /* "dubins.pyx":114
  *         return (_q0[0], _q0[1], _q0[2])
- * 
+ *
  *     def sample_many(self, step_size):             # <<<<<<<<<<<<<<
  *         '''Sample the entire path
  *         '''
@@ -2731,7 +2731,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_20sample_many(struct __pyx_obj_6
  *             return 0
  *         core.dubins_path_sample_many(self.ppth, step_size, callback, <void*>f)             # <<<<<<<<<<<<<<
  *         return qs, ts
- * 
+ *
  */
   __pyx_t_2 = __pyx_PyFloat_AsDouble(__pyx_v_step_size); if (unlikely((__pyx_t_2 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 123, __pyx_L1_error)
   dubins_path_sample_many(__pyx_v_self->ppth, __pyx_t_2, __pyx_f_6dubins_callback, ((void *)__pyx_v_f));
@@ -2740,7 +2740,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_20sample_many(struct __pyx_obj_6
  *             return 0
  *         core.dubins_path_sample_many(self.ppth, step_size, callback, <void*>f)
  *         return qs, ts             # <<<<<<<<<<<<<<
- * 
+ *
  *     def extract_subpath(self, t):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2758,7 +2758,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_20sample_many(struct __pyx_obj_6
 
   /* "dubins.pyx":114
  *         return (_q0[0], _q0[1], _q0[2])
- * 
+ *
  *     def sample_many(self, step_size):             # <<<<<<<<<<<<<<
  *         '''Sample the entire path
  *         '''
@@ -2779,7 +2779,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_20sample_many(struct __pyx_obj_6
 
 /* "dubins.pyx":126
  *         return qs, ts
- * 
+ *
  *     def extract_subpath(self, t):             # <<<<<<<<<<<<<<
  *         '''Extract a subpath
  *         '''
@@ -2846,7 +2846,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_22extract_subpath(struct __pyx_o
  *         if code != 0:
  *             raise RuntimeError('invalid subpath')             # <<<<<<<<<<<<<<
  *         return newpath
- * 
+ *
  */
     __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_RuntimeError, __pyx_tuple__8, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 132, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -2867,8 +2867,8 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_22extract_subpath(struct __pyx_o
  *         if code != 0:
  *             raise RuntimeError('invalid subpath')
  *         return newpath             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(((PyObject *)__pyx_v_newpath));
@@ -2877,7 +2877,7 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_22extract_subpath(struct __pyx_o
 
   /* "dubins.pyx":126
  *         return qs, ts
- * 
+ *
  *     def extract_subpath(self, t):             # <<<<<<<<<<<<<<
  *         '''Extract a subpath
  *         '''
@@ -3003,11 +3003,11 @@ static PyObject *__pyx_pf_6dubins_11_DubinsPath_26__setstate_cython__(CYTHON_UNU
 }
 
 /* "dubins.pyx":136
- * 
- * 
+ *
+ *
  * def path_sample(q0, q1, rho, step_size):             # <<<<<<<<<<<<<<
  *     '''Generate points along a Dubin's path sampled at a regular interval
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3111,7 +3111,7 @@ static PyObject *__pyx_pf_6dubins_path_sample(CYTHON_UNUSED PyObject *__pyx_self
  *     '''
  *     path = _DubinsPath.shortest_path(q0, q1, rho)             # <<<<<<<<<<<<<<
  *     return path.sample_many(step_size)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_ptype_6dubins__DubinsPath), __pyx_n_s_shortest_path); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3170,8 +3170,8 @@ static PyObject *__pyx_pf_6dubins_path_sample(CYTHON_UNUSED PyObject *__pyx_self
  *     '''
  *     path = _DubinsPath.shortest_path(q0, q1, rho)
  *     return path.sample_many(step_size)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_path, __pyx_n_s_sample_many); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 161, __pyx_L1_error)
@@ -3224,11 +3224,11 @@ static PyObject *__pyx_pf_6dubins_path_sample(CYTHON_UNUSED PyObject *__pyx_self
   goto __pyx_L0;
 
   /* "dubins.pyx":136
- * 
- * 
+ *
+ *
  * def path_sample(q0, q1, rho, step_size):             # <<<<<<<<<<<<<<
  *     '''Generate points along a Dubin's path sampled at a regular interval
- * 
+ *
  */
 
   /* function exit code */
@@ -3247,11 +3247,11 @@ static PyObject *__pyx_pf_6dubins_path_sample(CYTHON_UNUSED PyObject *__pyx_self
 }
 
 /* "dubins.pyx":164
- * 
- * 
+ *
+ *
  * def shortest_path(q0, q1, rho):             # <<<<<<<<<<<<<<
  *     '''Shortest path between dubins configurations
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3342,8 +3342,8 @@ static PyObject *__pyx_pf_6dubins_2shortest_path(CYTHON_UNUSED PyObject *__pyx_s
  *         The shortest path
  *     '''
  *     return _DubinsPath.shortest_path(q0, q1, rho)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_ptype_6dubins__DubinsPath), __pyx_n_s_shortest_path); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 186, __pyx_L1_error)
@@ -3401,11 +3401,11 @@ static PyObject *__pyx_pf_6dubins_2shortest_path(CYTHON_UNUSED PyObject *__pyx_s
   goto __pyx_L0;
 
   /* "dubins.pyx":164
- * 
- * 
+ *
+ *
  * def shortest_path(q0, q1, rho):             # <<<<<<<<<<<<<<
  *     '''Shortest path between dubins configurations
- * 
+ *
  */
 
   /* function exit code */
@@ -3423,11 +3423,11 @@ static PyObject *__pyx_pf_6dubins_2shortest_path(CYTHON_UNUSED PyObject *__pyx_s
 }
 
 /* "dubins.pyx":189
- * 
- * 
+ *
+ *
  * def path(q0, q1, rho, word):             # <<<<<<<<<<<<<<
  *     '''Find the Dubin's path for one specific word
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3529,7 +3529,7 @@ static PyObject *__pyx_pf_6dubins_4path(CYTHON_UNUSED PyObject *__pyx_self, PyOb
  *         The path with the specified word (if one exists) or None
  *     '''
  *     return _DubinsPath.path(q0, q1, rho, word)             # <<<<<<<<<<<<<<
- * 
+ *
  * def norm_path(alpha, beta, delta, word):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3591,11 +3591,11 @@ static PyObject *__pyx_pf_6dubins_4path(CYTHON_UNUSED PyObject *__pyx_self, PyOb
   goto __pyx_L0;
 
   /* "dubins.pyx":189
- * 
- * 
+ *
+ *
  * def path(q0, q1, rho, word):             # <<<<<<<<<<<<<<
  *     '''Find the Dubin's path for one specific word
- * 
+ *
  */
 
   /* function exit code */
@@ -3614,10 +3614,10 @@ static PyObject *__pyx_pf_6dubins_4path(CYTHON_UNUSED PyObject *__pyx_self, PyOb
 
 /* "dubins.pyx":215
  *     return _DubinsPath.path(q0, q1, rho, word)
- * 
+ *
  * def norm_path(alpha, beta, delta, word):             # <<<<<<<<<<<<<<
  *     '''Find the Dubin's path for one specific word assuming a normalized (alpha, beta, delta) frame
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3743,7 +3743,7 @@ static PyObject *__pyx_pf_6dubins_6norm_path(CYTHON_UNUSED PyObject *__pyx_self,
  *     q0 = [ 0.0, 0.0, alpha ]
  *     q1 = [ delta, 0.0, beta ]             # <<<<<<<<<<<<<<
  *     return path(q0, q1, 1.0, word)
- * 
+ *
  */
   __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 240, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3763,8 +3763,8 @@ static PyObject *__pyx_pf_6dubins_6norm_path(CYTHON_UNUSED PyObject *__pyx_self,
  *     q0 = [ 0.0, 0.0, alpha ]
  *     q1 = [ delta, 0.0, beta ]
  *     return path(q0, q1, 1.0, word)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_path); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 241, __pyx_L1_error)
@@ -3826,10 +3826,10 @@ static PyObject *__pyx_pf_6dubins_6norm_path(CYTHON_UNUSED PyObject *__pyx_self,
 
   /* "dubins.pyx":215
  *     return _DubinsPath.path(q0, q1, rho, word)
- * 
+ *
  * def norm_path(alpha, beta, delta, word):             # <<<<<<<<<<<<<<
  *     '''Find the Dubin's path for one specific word assuming a normalized (alpha, beta, delta) frame
- * 
+ *
  */
 
   /* function exit code */
@@ -3872,9 +3872,9 @@ static void __pyx_tp_dealloc_6dubins__DubinsPath(PyObject *o) {
   {
     PyObject *etype, *eval, *etb;
     PyErr_Fetch(&etype, &eval, &etb);
-    ++Py_REFCNT(o);
+    Py_SET_REFCNT(o, Py_REFCNT(0) + 1);
     __pyx_pw_6dubins_11_DubinsPath_3__dealloc__(o);
-    --Py_REFCNT(o);
+    Py_SET_REFCNT(o, Py_REFCNT(0) - 1);
     PyErr_Restore(etype, eval, etb);
   }
   (*Py_TYPE(o)->tp_free)(o);
@@ -3902,7 +3902,7 @@ static PyTypeObject __pyx_type_6dubins__DubinsPath = {
   sizeof(struct __pyx_obj_6dubins__DubinsPath), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_6dubins__DubinsPath, /*tp_dealloc*/
-  0, /*tp_print*/
+  0, /*tp_vectorcall_offset*/
   0, /*tp_getattr*/
   0, /*tp_setattr*/
   #if PY_MAJOR_VERSION < 3
@@ -4013,7 +4013,7 @@ static PyTypeObject __pyx_type_6dubins___pyx_scope_struct__sample_many = {
   sizeof(struct __pyx_obj_6dubins___pyx_scope_struct__sample_many), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_6dubins___pyx_scope_struct__sample_many, /*tp_dealloc*/
-  0, /*tp_print*/
+  0, /*tp_vectorcall_offset*/
   0, /*tp_getattr*/
   0, /*tp_setattr*/
   #if PY_MAJOR_VERSION < 3
@@ -4181,7 +4181,7 @@ static int __Pyx_InitCachedConstants(void) {
  *         if code != 0:
  *             raise RuntimeError('path did not initialise correctly')             # <<<<<<<<<<<<<<
  *         return path
- * 
+ *
  */
   __pyx_tuple__2 = PyTuple_Pack(1, __pyx_kp_s_path_did_not_initialise_correctl); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__2);
@@ -4203,7 +4203,7 @@ static int __Pyx_InitCachedConstants(void) {
  *         if code != 0:
  *             raise RuntimeError('endpoint not found')             # <<<<<<<<<<<<<<
  *         return (_q0[0], _q0[1], _q0[2])
- * 
+ *
  */
   __pyx_tuple__4 = PyTuple_Pack(1, __pyx_kp_s_endpoint_not_found); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
@@ -4214,7 +4214,7 @@ static int __Pyx_InitCachedConstants(void) {
  *         if code != 0:
  *             raise RuntimeError('sample not found')             # <<<<<<<<<<<<<<
  *         return (_q0[0], _q0[1], _q0[2])
- * 
+ *
  */
   __pyx_tuple__5 = PyTuple_Pack(1, __pyx_kp_s_sample_not_found); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 111, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__5);
@@ -4237,7 +4237,7 @@ static int __Pyx_InitCachedConstants(void) {
  *         if code != 0:
  *             raise RuntimeError('invalid subpath')             # <<<<<<<<<<<<<<
  *         return newpath
- * 
+ *
  */
   __pyx_tuple__8 = PyTuple_Pack(1, __pyx_kp_s_invalid_subpath); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
@@ -4263,7 +4263,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__10);
 
   /* "dubins.pyx":50
- * 
+ *
  *     @staticmethod
  *     def shortest_path(q0, q1, rho):             # <<<<<<<<<<<<<<
  *         cdef double _q0[3]
@@ -4275,7 +4275,7 @@ static int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(3, 0, 9, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dubins_dubins_pyx, __pyx_n_s_shortest_path, 50, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 50, __pyx_L1_error)
 
   /* "dubins.pyx":65
- * 
+ *
  *     @staticmethod
  *     def path(q0, q1, rho, word):             # <<<<<<<<<<<<<<
  *         cdef double _q0[3]
@@ -4287,11 +4287,11 @@ static int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__14 = (PyObject*)__Pyx_PyCode_New(4, 0, 10, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__13, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dubins_dubins_pyx, __pyx_n_s_path, 65, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__14)) __PYX_ERR(0, 65, __pyx_L1_error)
 
   /* "dubins.pyx":136
- * 
- * 
+ *
+ *
  * def path_sample(q0, q1, rho, step_size):             # <<<<<<<<<<<<<<
  *     '''Generate points along a Dubin's path sampled at a regular interval
- * 
+ *
  */
   __pyx_tuple__15 = PyTuple_Pack(5, __pyx_n_s_q0, __pyx_n_s_q1, __pyx_n_s_rho, __pyx_n_s_step_size, __pyx_n_s_path); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 136, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__15);
@@ -4299,11 +4299,11 @@ static int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__16 = (PyObject*)__Pyx_PyCode_New(4, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__15, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dubins_dubins_pyx, __pyx_n_s_path_sample, 136, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__16)) __PYX_ERR(0, 136, __pyx_L1_error)
 
   /* "dubins.pyx":164
- * 
- * 
+ *
+ *
  * def shortest_path(q0, q1, rho):             # <<<<<<<<<<<<<<
  *     '''Shortest path between dubins configurations
- * 
+ *
  */
   __pyx_tuple__17 = PyTuple_Pack(3, __pyx_n_s_q0, __pyx_n_s_q1, __pyx_n_s_rho); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 164, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__17);
@@ -4311,11 +4311,11 @@ static int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__18 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__17, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dubins_dubins_pyx, __pyx_n_s_shortest_path, 164, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__18)) __PYX_ERR(0, 164, __pyx_L1_error)
 
   /* "dubins.pyx":189
- * 
- * 
+ *
+ *
  * def path(q0, q1, rho, word):             # <<<<<<<<<<<<<<
  *     '''Find the Dubin's path for one specific word
- * 
+ *
  */
   __pyx_tuple__19 = PyTuple_Pack(4, __pyx_n_s_q0, __pyx_n_s_q1, __pyx_n_s_rho, __pyx_n_s_word); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 189, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__19);
@@ -4324,10 +4324,10 @@ static int __Pyx_InitCachedConstants(void) {
 
   /* "dubins.pyx":215
  *     return _DubinsPath.path(q0, q1, rho, word)
- * 
+ *
  * def norm_path(alpha, beta, delta, word):             # <<<<<<<<<<<<<<
  *     '''Find the Dubin's path for one specific word assuming a normalized (alpha, beta, delta) frame
- * 
+ *
  */
   __pyx_tuple__21 = PyTuple_Pack(6, __pyx_n_s_alpha, __pyx_n_s_beta, __pyx_n_s_delta, __pyx_n_s_word, __pyx_n_s_q0, __pyx_n_s_q1); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 215, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__21);
@@ -4494,12 +4494,10 @@ static int __pyx_pymod_exec_dubins(PyObject *__pyx_pyinit_module)
   /*--- Function export code ---*/
   /*--- Type init code ---*/
   if (PyType_Ready(&__pyx_type_6dubins__DubinsPath) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
-  __pyx_type_6dubins__DubinsPath.tp_print = 0;
   if (PyObject_SetAttrString(__pyx_m, "_DubinsPath", (PyObject *)&__pyx_type_6dubins__DubinsPath) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
   if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6dubins__DubinsPath) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
   __pyx_ptype_6dubins__DubinsPath = &__pyx_type_6dubins__DubinsPath;
   if (PyType_Ready(&__pyx_type_6dubins___pyx_scope_struct__sample_many) < 0) __PYX_ERR(0, 114, __pyx_L1_error)
-  __pyx_type_6dubins___pyx_scope_struct__sample_many.tp_print = 0;
   __pyx_ptype_6dubins___pyx_scope_struct__sample_many = &__pyx_type_6dubins___pyx_scope_struct__sample_many;
   /*--- Type import code ---*/
   /*--- Variable import code ---*/
@@ -4511,7 +4509,7 @@ static int __pyx_pymod_exec_dubins(PyObject *__pyx_pyinit_module)
 
   /* "dubins.pyx":31
  *     return (<object>f)(qn, t)
- * 
+ *
  * LSL = 0             # <<<<<<<<<<<<<<
  * LSR = 1
  * RSL = 2
@@ -4519,7 +4517,7 @@ static int __pyx_pymod_exec_dubins(PyObject *__pyx_pyinit_module)
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_LSL, __pyx_int_0) < 0) __PYX_ERR(0, 31, __pyx_L1_error)
 
   /* "dubins.pyx":32
- * 
+ *
  * LSL = 0
  * LSR = 1             # <<<<<<<<<<<<<<
  * RSL = 2
@@ -4550,7 +4548,7 @@ static int __pyx_pymod_exec_dubins(PyObject *__pyx_pyinit_module)
  * RSR = 3
  * RLR = 4             # <<<<<<<<<<<<<<
  * LRL = 5
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_RLR, __pyx_int_4) < 0) __PYX_ERR(0, 35, __pyx_L1_error)
 
@@ -4558,13 +4556,13 @@ static int __pyx_pymod_exec_dubins(PyObject *__pyx_pyinit_module)
  * RSR = 3
  * RLR = 4
  * LRL = 5             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_LRL, __pyx_int_5) < 0) __PYX_ERR(0, 36, __pyx_L1_error)
 
   /* "dubins.pyx":50
- * 
+ *
  *     @staticmethod
  *     def shortest_path(q0, q1, rho):             # <<<<<<<<<<<<<<
  *         cdef double _q0[3]
@@ -4578,7 +4576,7 @@ static int __pyx_pymod_exec_dubins(PyObject *__pyx_pyinit_module)
 
   /* "dubins.pyx":49
  *         free(self.ppth)
- * 
+ *
  *     @staticmethod             # <<<<<<<<<<<<<<
  *     def shortest_path(q0, q1, rho):
  *         cdef double _q0[3]
@@ -4598,7 +4596,7 @@ static int __pyx_pymod_exec_dubins(PyObject *__pyx_pyinit_module)
   PyType_Modified(__pyx_ptype_6dubins__DubinsPath);
 
   /* "dubins.pyx":65
- * 
+ *
  *     @staticmethod
  *     def path(q0, q1, rho, word):             # <<<<<<<<<<<<<<
  *         cdef double _q0[3]
@@ -4612,7 +4610,7 @@ static int __pyx_pymod_exec_dubins(PyObject *__pyx_pyinit_module)
 
   /* "dubins.pyx":64
  *         return path
- * 
+ *
  *     @staticmethod             # <<<<<<<<<<<<<<
  *     def path(q0, q1, rho, word):
  *         cdef double _q0[3]
@@ -4632,11 +4630,11 @@ static int __pyx_pymod_exec_dubins(PyObject *__pyx_pyinit_module)
   PyType_Modified(__pyx_ptype_6dubins__DubinsPath);
 
   /* "dubins.pyx":136
- * 
- * 
+ *
+ *
  * def path_sample(q0, q1, rho, step_size):             # <<<<<<<<<<<<<<
  *     '''Generate points along a Dubin's path sampled at a regular interval
- * 
+ *
  */
   __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_6dubins_1path_sample, NULL, __pyx_n_s_dubins); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 136, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4644,11 +4642,11 @@ static int __pyx_pymod_exec_dubins(PyObject *__pyx_pyinit_module)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "dubins.pyx":164
- * 
- * 
+ *
+ *
  * def shortest_path(q0, q1, rho):             # <<<<<<<<<<<<<<
  *     '''Shortest path between dubins configurations
- * 
+ *
  */
   __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_6dubins_3shortest_path, NULL, __pyx_n_s_dubins); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 164, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4656,11 +4654,11 @@ static int __pyx_pymod_exec_dubins(PyObject *__pyx_pyinit_module)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "dubins.pyx":189
- * 
- * 
+ *
+ *
  * def path(q0, q1, rho, word):             # <<<<<<<<<<<<<<
  *     '''Find the Dubin's path for one specific word
- * 
+ *
  */
   __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_6dubins_5path, NULL, __pyx_n_s_dubins); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 189, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4669,10 +4667,10 @@ static int __pyx_pymod_exec_dubins(PyObject *__pyx_pyinit_module)
 
   /* "dubins.pyx":215
  *     return _DubinsPath.path(q0, q1, rho, word)
- * 
+ *
  * def norm_path(alpha, beta, delta, word):             # <<<<<<<<<<<<<<
  *     '''Find the Dubin's path for one specific word assuming a normalized (alpha, beta, delta) frame
- * 
+ *
  */
   __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_6dubins_7norm_path, NULL, __pyx_n_s_dubins); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 215, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
