@@ -120,7 +120,7 @@ cdef class _DubinsPath:
             qs.append(q)
             ts.append(t)
             return 0
-        core.dubins_path_sample_many(self.ppth, step_size, callback, <void*>f)
+        core.dubins_path_sample_many(self.ppth, step_size, <DubinsPathSamplingCallback>callback, <void*>f)
         return qs, ts
 
     def extract_subpath(self, t):
