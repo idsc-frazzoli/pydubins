@@ -22,7 +22,7 @@ cimport core
 from libc.stdlib cimport malloc, free
 
 
-cdef inline int callback(double q[3], double t, void* f) except -1:
+cdef inline int callback(double q[3], double t, void* f) noexcept:
     '''Internal c-callback to convert values back to python
     '''
     qn = (q[0], q[1], q[2])
@@ -120,7 +120,7 @@ cdef class _DubinsPath:
             qs.append(q)
             ts.append(t)
             return 0
-        core.dubins_path_sample_many(self.ppth, step_size, <DubinsPathSamplingCallback>callback, <void*>f)
+        core.dubins_path_sample_many(self.ppth, step_size, callback, <void*>f)
         return qs, ts
 
     def extract_subpath(self, t):
