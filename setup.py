@@ -13,7 +13,7 @@ ext_modules = []
 if use_cython:
     ext_modules = [
         Extension("dubins",
-            ["dubins/dubins.pyx", "dubins/src/dubins.c"],
+            ["dubins/src/dubins.c", "dubins/dubins.pyx"],
             include_dirs = ["dubins/include"],
         )
     ]
